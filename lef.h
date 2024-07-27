@@ -19,10 +19,10 @@
  * evento_t possui os dados que descrevem os eventos 
  */
 struct evento_t {
-    unsigned int tempo;  /* tempo logico do evento */
-    unsigned int tipo;   /* inteiro para diferenciar os diferentes tipos de evento */
-    unsigned int dado1;  /* um inteiro para guardar dados do evento */
-    unsigned int dado2;  /* um inteiro para guardar dados do evento */
+    int tempo;  /* tempo logico do evento */
+    int tipo;   /* inteiro para diferenciar os diferentes tipos de evento */
+    int dado1;  /* um inteiro para guardar dados do evento */
+    int dado2;  /* um inteiro para guardar dados do evento */
 };
 
 /*
@@ -46,7 +46,7 @@ struct lef_t {
  * Cria um evento contendo os parâmetros informados.
  * Retorna um ponteiro para o evento ou NULL se falhar.
  */
-struct evento_t *cria_evento (unsigned int tempo, unsigned int tipo, unsigned int dado1, unsigned int dado2);
+struct evento_t *cria_evento (int tempo, int tipo, int dado1, int dado2);
 
 /* 
  * Destroi um evento e retorna NULL.
@@ -95,3 +95,4 @@ int vazia_lef (struct lef_t *l);
 void imprime_lef (struct lef_t *l);
 
 #endif
+
