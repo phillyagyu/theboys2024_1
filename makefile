@@ -1,4 +1,4 @@
-#Makefile de exemplo (Manual do GNU Make)
+# Makefile de exemplo (Manual do GNU Make)
      
 CFLAGS = -Wall -Werror -Wextra -std=c99 -g  # flags de compilacao
 LDFLAGS = -lm
@@ -7,8 +7,8 @@ ENTREGA = theboys-entrega
 CC = gcc
 
 # arquivos-objeto
-objects = theboys.o lef.o fila.o 
- 	     
+	objects = theboys.o lef.o fila.o 
+     
 all: theboys
 
 theboys: theboys.o conjunto.o lef.o fila.o
@@ -34,3 +34,4 @@ entrega: clean
 
 clean:
 	rm -f $(objects) theboys
+

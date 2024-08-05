@@ -52,6 +52,5 @@ int fila_vazia (struct fila *fila);
 
 /* Imprime a fila no formato "[ e1 e2 ... en ]" 
  * Se a fila for vazia imprime "[ ]" */
-void imprime_fila (struct fila *fila);
+void fila_imprime (struct fila *fila);
 #endif
-

@@ -95,4 +95,3 @@ int vazia_lef (struct lef_t *l);
 void imprime_lef (struct lef_t *l);
 
 #endif
-
